@@ -1,0 +1,32 @@
+; CameraInterface.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CameraInterface"
+DESCRIPTION  'CameraInterface Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+    InitDevice @1
+    CloseDevice @2
+	getFormat @3
+	setCaptureSizeByIndex @4
+	setPreviewWindow @5
+	startPreview @6
+	stopPreview @7
+	captureBitmap @8
+	setAutoCrop @10
+	setCameraProperty @11
+	startAutoCapture @12
+	stopAutoCapture @13
+	setRotateMode @14
+	setColorType @15
+	getDllVersion @16
+	getFirmWareVersion @17
+	SetVideoCallBack @18
+	GetVideoParameter @19
+ 	getLastErrorMessage @20
+	setPictureQuality @21
+	SetVideoParameter	@22
+	SetScanSize         @23
+	SetScanSizeCustom   @24
+	GetReslutionCount	@25
